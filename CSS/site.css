@@ -1,0 +1,367 @@
+p{
+    color: red;
+    font-size: 18px;
+}
+img{
+    padding-left: 300px;
+}
+
+li{
+    border: 1px solid blue;
+}
+
+/* Classes */
+.list{
+    background-color: red;
+    color: white;
+}
+
+/* ID */
+#perf{
+    color: green;
+}
+
+#color-name{
+    color:rgba(66, 109, 154, 0.655)
+}
+.color-name{
+    color: rgb(153, 177, 45);
+}
+
+
+/* Centralizando imagem */
+#texto{
+    background-image: url(assets/th.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    color: red;
+    font-size: 40px;
+    border: 1px solid blue;
+}
+
+#imga{
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Manipulando BOX MODEL */
+/* box-sizing, faz com que a largura seja respeitada */
+/* Border-radius, faz o arredondamento das bordas */
+.height-width{
+    width: 200px;
+    padding: 50px;
+    background-color: black;
+    box-sizing: border-box;  
+    border-radius: 10px;
+
+}
+
+/* Card de vendas */
+.container{
+    width: 480px;
+    height: 400px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-left: 300px;
+}
+
+/* Diplay muda o comportamento das tags, inline-block, faz com que sejam cirados um ao lado do outro */
+/* Display: nome, deixa invisivel para o site */
+#box-1, #box-2 {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 1px solid red;
+    width: 110px;
+    height: 150px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.h1-box{
+    font-size: 10px;
+    border-bottom: 1px solid red;
+}
+
+.p-box{
+    font-size: 10px;
+}
+
+.button-box{
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid green;
+    border-radius: 15px;
+    font-size: 10px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.img-box{
+    width: 98px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(assets/th.jpg);
+}
+
+.posic{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+
+}
+
+/* Por padrão o position é static */
+/* Z-index define qual ficar em cima ou embaixo */
+#a{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    
+}
+
+#b{
+    position: relative;
+    top: 20px;
+    left: 30px;
+    
+}
+
+#c{
+    position: fixed;
+    top: 30px;
+    left: 20px;
+    z-index: 1;
+    
+}
+
+#d{
+    position:sticky ;
+    top: 40px;
+    left: 10px;
+    
+}
+
+.radio label, input, span{
+    display: inline-block;
+}
+
+/* Responsividade */
+/* media query */
+
+#resp{
+    color: red;
+}
+
+/* Para telas menos que 500px */
+@media screen and (max-width: 700px){
+    #resp{
+        color: blue;
+    }
+}
+
+/* Para telas maiores que 1000px */
+@media screen and (min-width: 1000px){
+    #resp {
+        color: green;
+    }
+}
+
+/* Para landscape */
+#lands{
+    display: none;
+}
+@media screen and (orientation: landscape) and (max-width: 500px){
+    #lands{
+        display: block;
+        color: yellow;
+    }
+}
+
+/* FLEX BOX */
+
+.flex , .flex-column{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.box{
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
+
+/* Justify content */
+
+.center, .space-between, .space-around, .end{
+    display: flex;
+    margin-bottom: 20px
+}
+
+.center .box,.space-between .box, .space-around .box, .end .box{
+    width: 50px;
+}
+
+.center{
+    justify-content: center;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.end{
+    justify-content: end;
+}
+
+/* Aling itens */
+
+.aling-center, .flex-end, .stretch{
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+.aling-center .box, .flex-end .box, .stretch .box{
+    width: 50px;
+}
+
+.aling-center{
+    align-items: center;
+}
+
+.flex-end{
+    align-items: flex-end;
+}
+
+.stretch{
+    align-items: stretch;
+}
+
+.stretch .box{
+    height: auto;
+}
+
+/* Gap */
+
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green;
+    gap: 15px;
+}
+
+.gap .box{
+    width: 32%;
+}
+
+/* order */
+
+.order{
+    display: flex;
+}
+
+#three{
+    order: 1;
+}
+
+#one{
+    order: 2;
+}
+
+#two{
+    order: 3;
+}
+
+/* grow */
+
+.grow{
+    display: flex;
+}
+
+.grow .box{
+    flex: 1;
+}
+
+.grow #big{
+    flex: 2;
+}
+
+/* basis */
+
+.basis{
+    display: flex;
+}
+
+.basis .box{
+    flex-basis: 20px;
+}
+
+.basis #big{
+    flex-grow: 1;
+}
+
+/* shrinck */
+.shrick{
+    display: flex;
+}
+.shrick .box{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    width: auto;
+}
+.shrick #small{
+    flex-shrink: 2;
+}
+
+/* shorthand */
+
+.shorthand{
+    display: flex;
+}
+
+.shorthand .box{
+    width: auto;
+    flex: 1 1 50px;
+}
+
+.shorthand #diferent{
+    width: auto;
+    flex: 3 1 400px;
+}
+
+/* AUto alinhamento */
+
+.alinhamento{
+    display: flex;
+    height: 300px;
+    align-items: flex-end;
+    border: 1px solid purple;
+}
+
+.alinhamento #diferent{
+    align-self: center;
+}

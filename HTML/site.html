@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+
+    <!-- Chama o script do JS -->
+    <script src="../JS/script.js"></script>
+
+    <!--Chama o documento do css-->
+    <link rel="stylesheet" href="../CSS/site.css">
+
+</head>
+<body>
+    
+
+    <!--H1 ao H6 cria titulos-->
+    <h1>Meu Primeiro site</h1>
+    <h6>Sejam Bem vidos!</h6>
+
+    <!--P cria paragrafos-->
+    <p>Este site tem a função de ensinar novos programadores os conseitos basicos de HTML 5</p>
+
+    <!--existem posicionamentos-->
+
+    <div class="posic" id="a">absolute</div>
+    <div class="posic" id="b">relative</div>
+    <div class="posic" id="c">fixed</div>
+    <div class="posic" id="d">sticky</div>
+
+    <!--Adiconar img-->
+    <img src="assets/th.jpg" alt="Programdor Trabalhando" id="imga">
+
+    <!--Quebra de linhas-->
+    <br>
+    
+    
+    <!--Cria linha Horizontal-->
+    <hr>
+
+    <!--Adicionar Links-->
+    <a href="#">Meu site</a>
+
+    <!--Lista não ordenada!-->
+    <ul>
+        <li><a href=""#>Programar</a></li>
+        <li>Aprender</li>
+        <li>Buscar</li>
+        <li>Configuração</li>
+    </ul>
+
+    <!--Lista Ordenada-->
+    <ol>
+        <li><a href=""#>Programar</a></li>
+        <li>Aprender</li>
+        <li>Buscar</li>
+        <li>Configuração</li>
+    </ol>
+
+    <!--Tabelas-->
+    <table>
+        <tr>
+            <th>ID: </th>
+            <th>Nome: </th>
+            <th>Profissão: </th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>João Pedro</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Marcos</td>
+            <td>Funcionario</td>
+        </tr>
+    </table>
+
+    <!--Div ou Encapsulamento-->
+    <!--Div usada para encapsular itens de um menu, porem pode ser usados de outras formas!-->
+    <div>
+        <h1>Menu da Pagina</h1>
+        <ul>
+            <li class="list"> Menu</li>
+            <li class="list"> Buscar</li>
+            <li class="list"> Produtos</li>
+            <li id="perf"> Perfil</li>
+            <li><a href="#"></a> Restaurar</li>
+            <li><img src="assets/th.jpg" alt="Progrmador Trabalhando">Trabalhar</li>
+        </ul>
+    </div>
+
+    <!--Css-->
+    <p id="color-name">qualquer texto para nome de cores</p>
+    <p class="color-name">qualqur coisa</p>
+
+    
+    <!--Imagem de background-->
+        <h1 id="texto">Programador</h1>
+
+
+    <h1>Box Model</h1>    
+    <!--BOX MODEL-->
+    <div class="height-width">
+        <p>Algum conteudo</p>
+    </div>
+
+    <div class="container">
+
+        <div id="box-1">
+            <div class="img-box"></div>
+            <h1 class="h1-box">Biquini de Fita</h1>
+            <p class="p-box">biquini maravilhoso</p>
+            <a href="#" class="button-box">Compre AQUI!</a>
+        </div>
+
+        <div id="box-2">
+            <div class="img-box"></div>
+            <h1 class="h1-box">Biquini de cortininha</h1>
+            <p class="p-box">biquini maravilhoso</p>
+            <a href="#" class="button-box">Compre AQUI!</a>
+        </div>
+
+        <div id="box-1">
+            <div class="img-box"></div>
+            <h1 class="h1-box">Biquini de Fita</h1>
+            <p class="p-box">biquini maravilhoso</p>
+            <a href="#" class="button-box">Compre AQUI!</a>
+        </div>
+
+        <div id="box-1">
+            <div class="img-box"></div>
+            <h1 class="h1-box">Biquini de Fita</h1>
+            <p class="p-box">biquini maravilhoso</p>
+            <a href="#" class="button-box">Compre AQUI!</a>
+        </div>
+
+    </div>
+
+    <h1>Span</h1>
+    <!-- Aparece inline -->
+    <span>a</span>
+    <span>b</span>
+    <span>c</span>
+
+    <!-- Form essencial para o envio de dados no backend -->
+    <h1>Formulario</h1>
+    <h3>Login</h3>
+    <form action="register.php" method="get">
+        <div>
+        <label for="email">Email: </label>
+        <input type="text" name="email">
+        </div>
+
+        <br>
+
+        <div>
+        <label for="password">Senha: </label>
+        <input type="text" name="password">
+        </div>
+
+        <br>
+        <!-- SELECT e OPTION usados para criar caixa de seleção ao usuario -->
+        <div>
+        <br>
+        
+           <label for="job">Selecione a sua profissão:</label>
+
+        <br>
+
+            <select name="job" multiple>
+                <option value="programador">Programador</option>
+                <option value="tester">Tester</option>
+                <option value="devops">DevOps</option>
+            </select>
+         </div>
+
+         <div>
+            <br>
+            
+               <label for="contract">Voçê aceita os termos de contrato?</label>
+    
+            <br>
+    
+                <select name="contact" id="">
+                    <option value="sim">Sim</option>
+                    <option value="nao" selected>Não</option>
+                </select>
+             </div>
+
+             <br>
+             <!-- Textarea -->
+             <div>
+                <label for="comment">Comentario:</label>
+                <br>
+                <textarea name="comment" id=""></textarea>
+             </div>
+             <br>
+
+             <!-- fildset e legend -->
+              <div>
+                <fieldset>
+                    <legend>Preencha as suas informações:</legend>
+                    <label for="nome">Nome:</label>
+                    <br>
+                    <input type="text" name="nome" id="">
+                    <br>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <br>
+                    <input type="text" name="sobrenome">
+                </fieldset>
+              </div>
+
+              <br>
+              <!-- Datalist -->
+               <div>
+                <label for="flavor">Escolha o sabor:</label>
+                <input type="text" list="flavors" name="flavor">
+
+                <datalist id="flavors">
+                    <option value="Cereja"></option>
+                    <option value="Morango"></option>
+                    <option value="Abacaxi"></option>
+                    <option value="Chocolate"></option>
+                </datalist>
+               </div>
+
+               <br>
+               <!-- Senha -->
+                <div>
+                    <label for="senha">Digite sua senha:</label>
+                    <input type="password" name="senha" id="">
+                </div>
+
+                <br>
+                <h1>Radio button</h1>
+                <!-- Radio button -->
+                 <div>
+                    <label for="car_model">Escolha o modelo do seu carro:</label>
+                    <div class="radio">
+                        <input type="radio" name="car_model" value="BMW">
+                        <label for="bmw">BMW</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="car_model" value="Renault">
+                        <label for="renault">Renault</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="car_model" value="Ferrari">
+                        <label for="ferrari">Ferrari</label>
+                    </div>
+                 </div>
+                 <br>
+
+                 <!-- CheckBox, obrigatorio o uso de [] para que não de erro com mais de 1 opção -->
+                  <h1>CheckBox</h1>
+                 <div>
+                    <label for="optionais">Opcionais do carro:</label>
+                    <div class="radio">
+                        <input type="checkbox" name="optionais[]" value="ferrari">
+                        <label for="ferrari">Ferrari</label>
+                    </div>
+                    <div class="radio">
+                        <input type="checkbox" name="optionais[]" value="bmw">
+                        <label for="bmw">BMW</label>
+                    </div>
+                    <div class="radio">
+                        <input type="checkbox" name="optionais[]" value="renault">
+                        <label for="renault">Renault</label>
+                    </div>
+                 </div>
+
+                 <br>
+                 <!-- Data-->
+                  <h1>Data</h1>
+                  <div>
+                    <label for="aniversairo"> Data de nascimento:</label>
+                    <div>
+                        <input type="date" name="aniversairo">
+                        
+                    </div>
+                  </div>
+
+                  <br>
+                  <!-- Arquivos -->
+                   <h1>Arquivos</h1>
+                   <div>
+                    <label for="image">Insira sua imagem:</label>
+                    <div>
+                        <input type="file" name="image">
+                    </div>
+                   </div>
+
+                   <br>
+                   <!-- Apenas numeros -->
+                    <div>
+                        <label for="numeros"> Digite seu salario:</label>
+                        <input type="number" name="numeros" id="">
+                    </div>
+
+                    <br>
+                    <!-- Email -->
+                     <h1>Exclusivo para validação de email</h1>
+                     <div>
+                        <label for="email">Digite seu email:</label>
+                        <input type="email" name="email">
+                     </div>
+
+                     <br>
+                     <!-- Value -->
+                     <div>
+                        <label for="value">Digite algum valor:</label>
+                        <input type="text" name="value" value="Meu valor é esse.">
+                     </div>
+
+                     <!-- disable -->
+                      <h1>Disable</h1>
+                      <div>
+                        <p>Tente mudar o valor:</p>
+                        <input type="text" disabled value="Não precisa responder.">
+                      </div>
+
+                      <br>
+                     <!--Place holder  -->
+                     <div>
+                        <label for="dica">Digite algo:</label>
+                        <input type="text" name="dica" placeholder="Digite algo">
+                     </div>
+
+                     <br>
+                     <!-- Requiered -->
+                      <div>
+                        <label for="aniversairo">Ano do nascimento:</label>
+                        <input type="text" name="aniversairo" placeholder="Digite seu aniversairo" required>
+                      </div>
+
+                <br>
+                <!-- resetar form -->
+                <input type="reset" name="Limpar" id="">
+               <!-- Enviar form -->
+                <input type="submit" value="Enviar">
+    </form>
+
+    <br>
+
+    <h1>Responsividade</h1>
+
+    <h2 id="resp">Muda a cor de acordo com o tamanha da tela!!</h2>
+    <h2 id="lands">Landscape</h2>
+
+    <h1>Flex Box</h1>
+
+    <!-- Flex -->
+    <div class="flex">
+        <p>meu</p>
+        <p>primerio</p>
+        <p>elemento</p> 
+        <p>flex</p>
+    </div>
+
+    <!-- Flex column -->
+    <div class="flex-column">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    </div>
+
+    <!-- Wrap -->
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- Justyfi content -->
+     <h2>center</h2>
+     <div class="center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+     </div>
+
+     <h2>Space Between</h2>
+     <div class="space-between">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+     </div>
+
+     <h2>Space Around</h2>
+     <div class="space-around">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+     </div>
+
+     <h2>end</h2>
+     <div class="end">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+     </div>
+
+     <!-- Aling itens -->
+
+     <h2>center</h2>
+     <div class="aling-center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+     </div>
+
+     <h2>End</h2>
+     <div class="flex-end">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+     </div>
+
+     <h2>Stretch</h2>
+     <div class="stretch">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+     </div>
+
+     <!-- Gap -->
+      <div class="gap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+
+      <!-- Order -->
+       <h2>Order</h2>
+       <div class="order">
+        <div class="box" id="one">1</div>
+        <div class="box" id="two">2</div>
+        <div class="box" id="three">3</div>
+       </div>
+
+       <!-- Grow -->
+       <div class="grow">
+            <div class="box"></div>
+            <div class="box" id="big"></div>
+            <div class="box"></div>
+       </div>
+
+       <!-- basis -->
+        <h2>basis</h2>
+        <div class="basis">
+            <div class="box"></div>
+            <div class="box" id="big"></div>
+            <div class="box"></div>
+       </div>
+
+       <!-- shrinck -->
+       <h2>shrick</h2>
+       <div class="shrick">
+           <div class="box"></div>
+           <div class="box" id="small"></div>
+           <div class="box"></div>
+      </div>
+
+      <!-- Flex shorthand -->
+      <h2>shorthand</h2>
+      <div class="shorthand">
+          <div class="box"></div>
+          <div class="box" id="diferent"></div>
+          <div class="box"></div>
+     </div>
+
+     <!-- auto alinhamento -->
+     <h2>auto alinhamento</h2>
+     <div class="alinhamento">
+         <div class="box"></div>
+         <div class="box" id="diferent"></div>
+         <div class="box"></div>
+    </div>
+
+    <!-- HTML semântico -->
+     <h1>HTML Semântico</h1>
+
+     <header>cabeçalho</header>
+     <nav>navegação</nav>
+     <main>conteudo/tudo que e conteudo esta na main</main>
+     <figure>
+        <img src="assets/th.jpg" alt="">
+        <figcaption>legenda da imagem</figcaption>
+     </figure>
+     <section>sesoes</section>
+     <mark>Dixa em evidencia</mark>
+     <aside>lateral</aside>
+     <article>artigo</article>
+     <footer>rodape</footer>
+
+     <!-- JAVA SCRIPT -->
+
+     <h1>Inicio Java Script</h1>
+
+     <h2>Tipos de operadores</h2>
+     <p>mais, menos, vezes , divisão</p>
+     <p>+ | - | * | / </p>
+     
+     <h2>Tipos de String</h2>
+     <p>"" | '' | ``</p>
+
+     <h2>Caracteris especiais</h2>
+     <p>\n pula uma linha na string</p>
+
+     <h2>Concatenação</h2>
+     <p>unir textos com +</p>
+
+     <h2>Interpolação</h2>
+     <p>`${}` para ser usado precisa estar entre crase </p>
+
+     <h2>Boolean</h2>
+     <p>True ou False</p>
+
+     <h2>Comparações</h2>
+     <p>maior, menor, igual, diferente, identico, maior igual, menor igual</p>
+     <p> > | < | == | != | === | >= | <= | !== </p>
+
+     <h2>Operadores lógicos</h2>
+     <p>AND, OR, NOT</p>
+     <p>&& | || | !</p>
+
+     <h2>Empty value</h2>
+     <p>undefined, algo que ainda nao foi definido</p>
+     <p>null, algo sem respota que pode ser alterado</p>
+
+     <h2>Conversões automaticas</h2>
+     <p>5 * null = 0</p>
+     <p>"5" + 1 = 51</p>
+     <p>"5" - 3 = 2</p>
+     <p>"a" * "b" = NaN</p>
+
+     <h1>Estruturas de programação</h1>
+
+     <p>Variaveis = let</p>
+     <p>Constante impossivel de ser alterada = const</p>
+
+     <h1>funções padrões do JS</h1>
+
+     <h2>função prompt</h2>
+     <p>serve com um input</p>
+     <p>EX: const x = prompt("Digite um numero:")</p>
+
+     <h2>função alert</h2>
+     <p>aparece uma caixa de alerta</p>
+
+     <h2>função math</h2>
+     <p>existem 2 formas de usar math</p>
+     <p>.max retorna o valor maior</p>
+     <p>.floor arredonda pra baixo</p>
+     <p>.ceil arredonda par cima</p>
+
+     <h2>função console</h2>
+     <p>existem varias formas de usar o console</p>
+     <p>.log retorna algo pelo console para o programador</p>
+     <p>.error dispara um erro para o console</p>
+     <p>.warn dispara um aviso para o console</p>
+
+     <h2>Estrturas de controle</h2>
+     <p>
+        Ex: 
+            if(10 === 10){ se for verdade continue o codigo}
+            if else{ se nao contine por aqui}
+            else{ no ultimo caso venha por aqui}
+     </p>
+
+     <h2>Estruturas de repetição</h2>
+     <p>WHILE ou FOR</p>
+     <p>repete o mesmo codigo ate que alguma condição seja satisfeita</p>
+
+     <h2>Estrutura condicional</h2>
+     <p>switch</p>
+
+     <h2>Funções</h2>
+      <p>EX:
+        Normal
+        function nome-func (a,b){
+            console.log(`seu nome é ${a} voçê tem ${b} idade.`)
+        }
+        Com variavel
+        const testeFunction = function (a,b) {
+            console.log(`seu nome é ${a} voçê tem ${b} idade.`)
+        }
+        Arrow function
+        const testeFunction = (a,b) => {
+            console.log(`seu nome é ${a} voçê tem ${b} idade.`)
+        }
+        Arrow resumida
+        const somaFunction = (a,b) => a + b
+
+        <h2>Closure</h2>
+        <p>Cria um escopo, para agrupar function que tenho mesmas variaveis ou algo que se repete</p>
+        <p>
+            EX:
+            function someFunction(a, b){
+                let num1 = a
+                let num2 = b
+
+                const soma = (num1, num2) => num1 + num2
+
+                const diminuir = (num1, num2) => num1 - num2
+
+                const multiple = (num1, num2) => num1 * num2
+
+                soma()
+                diminuir()
+                multiple()
+            }
+        </p>
+
+        <h2>Recursão</h2>
+        <p> cria um loop dentro de um função</p>
+        <p>
+            EX:
+            const untilTen = (n, m) => {
+
+                if(n < 10){
+                    console.log(" N é menor que 10, parei!")
+                } else {
+                    const x = n - m
+            
+                    console.log(x)
+            
+                    untilTen(x, m)
+                }
+            }
+            
+            untilTen(70, 5)
+        </p>
+
+        <h2>Arrays e objetos</h2>
+        <p>Os valores são inseridos dentro de uma [] são listas e dentro de {} são objetos</p>
+
+        <h2>JSON</h2>
+        <p>Olhe o script</p>
+
+
+
+
+</body>
+</html>
