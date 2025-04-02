@@ -62,3 +62,66 @@ const b = checkNumber(10)
 
 a.then((v) => console.log(`O resultado é: ${v}`).catch((err) => console.log(`Um erro ocorre: ${err}`)))
 b.then((v) => console.log(`O resultado é: ${v}`).catch((err) => console.log(`Um erro ocorre: ${err}`)))
+
+// Resolvendo varias promisses
+
+const p1 = new Promise((resolve, reject) => {
+    setTimeout(function() {
+        resolve(10)
+    }, 3000)
+})
+
+const p2 = Promise.resolve(10 + 10)
+
+const p3 = new Promise((resolve, reject) => {
+    if(30 > 10){
+        resolve(30)
+    } else {
+        reject("ERROR")
+    }
+})
+
+Promise.all([p1,p2,p3]).then((value) => {console.log(value)})
+
+// async function
+
+async function somarDelay(n1, n2) {
+    return n1 + n2 
+}
+
+somarDelay(4,2).then((value) => {
+    console.log(`O valor da soma é: ${value}`)
+})
+
+// await
+
+function resolveDelay(){
+    return new Promise ((resolve) => {
+        setTimeout(() => {
+            resolve("Resolveu a promise")
+        },2000)
+    })
+}
+
+async function chamadaAsync() {
+    console.log("Chamando a promise, aguardando o resultado...")
+    const result = await resolveDelay()
+    console.log(`o resultado chegou ${result}`)
+}
+
+
+chamadaAsync()
+
+// Generators
+
+function* generator(){
+    yield 1
+    yield 2
+    yield 3
+}
+
+const gen = generator()
+
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
